@@ -1,0 +1,73 @@
+﻿@model X.PagedList.IPagedList<TestWeb.Models.Books>
+@using X.PagedList.Mvc.Core
+
+@{
+    ViewData["Title"] = "AllBooks";
+    Layout = "~/Views/Admin/AdminLayout.cshtml";
+}
+
+<style>
+    .table-container {
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .table {
+        min-width: 100%;
+    }
+
+    th, td {
+        white-space: nowrap;
+        padding: 8px;
+    }
+</style>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<h1>AllBooks</h1>
+<p>
+    <a asp-action="AddBook">Create New</a>
+</p>
+
+<div class="table-container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.First().Title)</th>
+                <th>@Html.DisplayNameFor(model => model.First().Author)</th>
+                <th>@Html.DisplayNameFor(model => model.First().Publisher)</th>
+                <th>@Html.DisplayNameFor(model => model.First().PublishedDate)</th>
+                <th>@Html.DisplayNameFor(model => model.First().Price)</th>
+                <th>@Html.DisplayNameFor(model => model.First().StockQuantity)</th>
+                <th>@Html.DisplayNameFor(model => model.First().Description)</th>
+                <th>@Html.DisplayNameFor(model => model.First().ImageURL)</th>
+                <th>@Html.DisplayNameFor(model => model.First().Category.CategoryName)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Title)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Author)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Publisher)</td>
+                    <td>@Html.DisplayFor(modelItem => item.PublishedDate)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Price)</td>
+                    <td>@Html.DisplayFor(modelItem => item.StockQuantity)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Description)</td>
+                    <td>@Html.DisplayFor(modelItem => item.ImageURL)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Category.CategoryName)</td>
+                    <td>
+                        <a asp-controller="Admin" asp-action="EditBook" asp-route-id="@item.BookID">Edit</a> |
+                        <a asp-controller="Admin" asp-action="DetailsBook" asp-route-id="@item.BookID">Details</a> |
+                        <a asp-controller="Admin" asp-action="DeleteBook" asp-route-id="@item.BookID">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="pagination">
+    @Html.PagedListPager(Model, page => Url.Action("AllBooks", new { page }))
+</div>

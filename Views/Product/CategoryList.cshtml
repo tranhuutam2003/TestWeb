@@ -1,0 +1,18 @@
+﻿@model IEnumerable<TestWeb.Models.Category>
+
+<h2>Danh sách Danh mục</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tên danh mục</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var category in Model)
+        {
+            <tr>
+                <td>@category.CategoryName</td>
+            </tr>
+        }
+    </tbody>
+</table>

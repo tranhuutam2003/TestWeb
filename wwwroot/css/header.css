@@ -1,0 +1,412 @@
+/* custom amazon fonts */
+@font-face {
+    font-family: amazon;
+    src: url("~/font/amazon-font.ttf");
+}
+
+@font-face {
+    font-family: amazon-bold;
+    src: url("~/font/amazon-font-bold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: amazon, sans-serif;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    min-width: 1000px;
+    background-color: #e3e6e6;
+    scroll-behavior: smooth;
+}
+
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    position: relative;
+    z-index: 5;
+}
+
+.wb {
+    border: 1px solid transparent;
+}
+
+/* ---------nav1 starts here------- */
+.nav1 {
+    height: 60px;
+    width: 100%;
+    background-color: #131921;
+    color: white;
+    justify-content: space-between;
+}
+
+/* nav amazon logo */
+.nav-amazon-logo {
+    height: 60px;
+    width: 115px;
+    margin: 10px 0px 10px 5px;
+    padding-top: 5px;
+}
+
+    .nav-amazon-logo img {
+        height: 50px;
+        width: 115px;
+    }
+
+/* nav location div/box 2 */
+.nav-location-div {
+    margin-left: 10px;
+    padding-left: 5px;
+}
+
+.nav-location-img img {
+    margin-top: 12px;
+    /* height: 24px; */
+    width: 16px;
+    margin-right: 3px;
+}
+
+#nav-location-div-india {
+    position: relative;
+    top: -4px;
+}
+
+.nav-text1 {
+    font-size: 12px;
+    font-weight: 400;
+    white-space: nowrap;
+    padding-right: 15px;
+}
+
+.nav-text2 {
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* nav search bar div */
+.nav-search-div {
+    width: 100%;
+    margin: 10px;
+    min-width: 360px;
+    border-radius: 6px;
+    /* overflow: hidden; */
+}
+
+    .nav-search-div select {
+        width: 55px;
+        height: 40px;
+        border: none;
+        text-align: center;
+        font-size: 14px;
+        color: rgb(93, 93, 93);
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+        .nav-search-div select option {
+            color: black;
+            text-align: start;
+        }
+
+    .nav-search-div input {
+        height: 40px;
+        outline: none;
+        border: none;
+        text-indent: 10px;
+        width: 100%;
+        font-size: 16px;
+    }
+
+.nav-search-icon {
+    background-color: #febd69;
+    height: 40px;
+    width: 55px;
+    min-width: 40px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+    .nav-search-icon i {
+        font-size: 20px;
+        color: #2d2d2d;
+    }
+
+/*  nav-> right side of search box */
+
+.nav-language {
+    display: flex;
+    padding: 22px 12px 12px 10px;
+    margin-left: 10px;
+}
+
+    .nav-language img {
+        margin-right: 4px;
+    }
+
+.nav-right-box1 {
+    padding: 10px;
+    position: relative;
+}
+
+/* account & list hover area here  */
+.acc-hover {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 384px;
+    left: -300px;
+    top: 50px;
+    z-index: 10;
+    border-radius: 3px;
+    padding: 14px 14px 7px 14px;
+    display: none;
+}
+
+#acc-hover-triangle {
+    font-size: 25px;
+    position: absolute;
+    right: 72px;
+    top: -14px;
+}
+
+.acc-hover-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#acc-hover-signin {
+    width: 218px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 14px;
+    background-color: rgb(255, 213, 43);
+    border-radius: 10px;
+}
+
+#acc-hover-new {
+    color: black;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.acc-hover-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.acc-hover-title {
+    color: black;
+    font-size: 16px;
+    line-height: 15px;
+    font-family: amazon-bold;
+    white-space: nowrap;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.acc-hover-Lbox,
+.acc-hover-Rbox {
+    width: 100%;
+    margin: 10px;
+}
+
+    .acc-hover-Lbox a,
+    .acc-hover-Rbox a {
+        display: block;
+        text-decoration: none;
+        color: rgb(54, 54, 54);
+        font-size: 14px;
+        padding-top: 5px;
+    }
+/* account & list hover area ends here  */
+
+.nav-right-box2 {
+    padding: 10px;
+}
+
+/* drop down list arrow */
+.fa-caret-down {
+    font-size: 9px;
+    align-self: flex-end;
+    padding-left: 4px;
+    color: #9f9f9f;
+}
+
+#cart0 {
+    font-size: 16px;
+    color: #ff9100;
+    position: absolute;
+    left: 28px;
+    top: 8px;
+    user-select: none;
+}
+
+#cart-text {
+    position: relative;
+    right: 5px;
+}
+
+.nav-right-box3 {
+    padding: 10px;
+    padding-right: 5px;
+    margin-right: 10px;
+    position: relative;
+}
+
+
+/* ---------nav2 starts here------- */
+
+.nav2 {
+    display: flex;
+    height: 39px;
+    width: 100%;
+    background-color: #232f3e;
+    justify-content: space-between;
+    padding-inline: 10px;
+}
+
+    .nav2 a {
+        color: white;
+        text-decoration: none;
+        margin: 1px;
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid transparent;
+    }
+
+        .nav2 a:first-child {
+            padding-left: 0px;
+            font-weight: 700;
+            padding: 5px;
+        }
+
+#nav2-all-text {
+    padding-left: 2px;
+    position: relative;
+    top: -3px;
+}
+
+#nav2-lines-img {
+    padding-top: 3px;
+    color: white;
+}
+
+.nav2-right-item {
+    font-weight: 600;
+}
+
+/* -------swiper / moving images -------*/
+
+
+
+/* -----------shopping area starts from here---------- */
+
+
+
+/* ------area 1------  */
+
+
+/* ---single big image box starts here---  */
+
+/* .big-box{
+
+} */
+
+.big-box img {
+    width: 100%;
+    height: 300px;
+    padding: 0px 10px 10px 10px;
+}
+
+/* ----------footer starts here------- */
+
+
+
+/* ----------hover effects-------- */
+
+.hover-black-effect {
+    background-color: rgb(0, 0, 0,0.6);
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    display: none;
+}
+
+
+.wb:hover,
+.nav2 a:hover {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.nav-search-div select:hover {
+    color: black;
+}
+
+/* .nav-search-div:hover {
+  border: 2.5px solid #ff9100;
+} */
+
+#acc-hover-signin:hover {
+    text-decoration: underline;
+    text-decoration-color: #ff9100;
+}
+
+.nav-text2:hover,
+.nav-text1:hover,
+.nav-search-div select:hover,
+.nav-search-icon:hover {
+    cursor: pointer;
+}
+
+.shopping-top-text a:visited,
+.box-more a:visited {
+    color: #007185;
+}
+
+.shopping-top-text a:hover,
+.box-more a:hover,
+#acc-hover-new a:hover,
+.acc-hover-Lbox a:hover,
+.acc-hover-Rbox a:hover {
+    text-decoration: underline;
+    color: rgb(181, 45, 0);
+}
+
+.back-to-top:hover {
+    background-color: rgb(84, 93, 104);
+}
+
+.foot-area ul li a:hover {
+    text-decoration: underline;
+}
+
+/* acc & list show   */
+.nav-right-box1:hover > .acc-hover {
+    display: block;
+}
+
+/* ----------------media queries / responsiveness------------- */
+
+@media (width>1200px) {
+    .box {
+        flex-basis: calc(25% - 20px);
+    }
+}
