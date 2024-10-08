@@ -45,15 +45,41 @@ namespace TestWeb.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken] 
-        public IActionResult AddBook(Books book)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddBook(Books book)
         {
             if (ModelState.IsValid)
             {
-                _context.Books.Add(book);  // Thêm sách mới vào DbContext
-                _context.SaveChanges();    // Lưu thay đổi vào cơ sở dữ liệu
-                return RedirectToAction("Index");  // Chuyển hướng về trang danh sách
+                if (book.ImageFile != null)
+                {
+                    // Sửa đường dẫn thư mục wwwroot/images
+                    var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "img", "products");
+
+                    // Tạo thư mục nếu chưa tồn tại
+                    if (!Directory.Exists(imagePath))
+                    {
+                        Directory.CreateDirectory(imagePath);
+                    }
+
+                    // Tạo tên file duy nhất
+                    var fileName = Path.GetFileNameWithoutExtension(book.ImageFile.FileName);
+                    var extension = Path.GetExtension(book.ImageFile.FileName);
+                    book.ImageURL = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+
+                    var filePath = Path.Combine(imagePath, book.ImageURL);
+
+                    // Lưu ảnh vào thư mục
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await book.ImageFile.CopyToAsync(fileStream);
+                    }
+                }
+
+                _context.Books.Add(book);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index");
             }
+            ViewBag.CategoryList = new SelectList(_context.Categories, "CategoryID", "CategoryName");
             return View(book);
         }
 
@@ -106,5 +132,12 @@ namespace TestWeb.Controllers
         //     var revenues = _context.Revenues.ToList();
         //     return View(revenues);
         // }
+
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("Username");
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index", "Home");
+        }
     }
 }

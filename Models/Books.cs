@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TestWeb.Models
 {
@@ -14,6 +15,9 @@ namespace TestWeb.Models
         public decimal? Price { get; set; }
         public int StockQuantity { get; set; }
         public string? Description { get; set; }
+
+        [NotMapped] // Không lưu thuộc tính này vào cơ sở dữ liệu
+        public IFormFile? ImageFile { get; set; }
         public string? ImageURL { get; set; }
 
         public Category? Category { get; set; }
