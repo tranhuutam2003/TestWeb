@@ -52,7 +52,6 @@ namespace TestWeb.Controllers
             {
                 if (book.ImageFile != null)
                 {
-                    // Sửa đường dẫn thư mục wwwroot/images
                     var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "img", "products");
 
                     // Tạo thư mục nếu chưa tồn tại
@@ -68,17 +67,39 @@ namespace TestWeb.Controllers
 
                     var filePath = Path.Combine(imagePath, book.ImageURL);
 
-                    // Lưu ảnh vào thư mục
-                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    try
                     {
-                        await book.ImageFile.CopyToAsync(fileStream);
+                        // Lưu ảnh vào thư mục
+                        using (var fileStream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await book.ImageFile.CopyToAsync(fileStream);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        //TempData["ErrorMessage"] = $"Error saving the image: {ex.Message}";
+                        return RedirectToAction("AddBook"); // Hoặc trang bạn muốn quay lại
                     }
                 }
+                else
+                {
+                    //TempData["ErrorMessage"] = "No image file was uploaded.";
+                    return RedirectToAction("AddBook"); // Hoặc trang bạn muốn quay lại
+                }
 
-                _context.Books.Add(book);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Index");
+                try
+                {
+                    _context.Books.Add(book);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction("Index");
+                }
+                catch (Exception ex)
+                {
+                    //TempData["ErrorMessage"] = $"Error saving the book: {ex.Message}";
+                    return RedirectToAction("AddBook"); // Hoặc trang bạn muốn quay lại
+                }
             }
+
             ViewBag.CategoryList = new SelectList(_context.Categories, "CategoryID", "CategoryName");
             return View(book);
         }
@@ -99,14 +120,48 @@ namespace TestWeb.Controllers
         // Sửa sản phẩm - Xử lý khi người dùng submit form
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult EditBook(Books book)
+        public async Task<IActionResult> EditBook(Books book)
         {
             if (ModelState.IsValid)
             {
+                if (book.ImageFile != null)
+                {
+                    var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "img", "products");
+
+                    // Tạo thư mục nếu chưa tồn tại
+                    if (!Directory.Exists(imagePath))
+                    {
+                        Directory.CreateDirectory(imagePath);
+                    }
+
+                    // Tạo tên file duy nhất
+                    var fileName = Path.GetFileNameWithoutExtension(book.ImageFile.FileName);
+                    var extension = Path.GetExtension(book.ImageFile.FileName);
+                    book.ImageURL = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+
+                    var filePath = Path.Combine(imagePath, book.ImageURL);
+
+                    try
+                    {
+                        // Lưu ảnh vào thư mục
+                        using (var fileStream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await book.ImageFile.CopyToAsync(fileStream);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        //TempData["ErrorMessage"] = $"Error saving the image: {ex.Message}";
+                        return RedirectToAction("EditBook", new { id = book.BookID }); // Hoặc trang bạn muốn quay lại
+                    }
+                }
+
+                // Cập nhật thông tin sách
                 _context.Books.Update(book); // Cập nhật thông tin sách
-                _context.SaveChanges();      // Lưu thay đổi vào cơ sở dữ liệu
+                await _context.SaveChangesAsync(); // Lưu thay đổi vào cơ sở dữ liệu
                 return RedirectToAction("Index");
             }
+
             ViewBag.CategoryList = new SelectList(_context.Categories, "CategoryID", "CategoryName");
             return View(book);  // Nếu không hợp lệ, hiển thị lại form với dữ liệu hiện tại
         }
@@ -121,9 +176,12 @@ namespace TestWeb.Controllers
             {
                 return NotFound();
             }
-            _context.Books.Remove(book); // Xóa sách khỏi DbContext
-            _context.SaveChanges();      // Lưu thay đổi vào cơ sở dữ liệu
-            return RedirectToAction("Index");
+
+            // Xóa sách khỏi DbContext
+            _context.Books.Remove(book);
+            _context.SaveChanges(); // Lưu thay đổi vào cơ sở dữ liệu
+
+            return RedirectToAction("AllBooks");
         }
 
         // Xem doanh thu (bỏ comment nếu cần sử dụng)

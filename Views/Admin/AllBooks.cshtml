@@ -45,26 +45,30 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>@Html.DisplayFor(modelItem => item.Title)</td>
-                    <td>@Html.DisplayFor(modelItem => item.Author)</td>
-                    <td>@Html.DisplayFor(modelItem => item.Publisher)</td>
-                    <td>@Html.DisplayFor(modelItem => item.PublishedDate)</td>
-                    <td>@Html.DisplayFor(modelItem => item.Price)</td>
-                    <td>@Html.DisplayFor(modelItem => item.StockQuantity)</td>
-                    <td>@Html.DisplayFor(modelItem => item.Description)</td>
-                    <td>@Html.DisplayFor(modelItem => item.ImageURL)</td>
-                    <td>@Html.DisplayFor(modelItem => item.Category.CategoryName)</td>
-                    <td>
-                        <a asp-controller="Admin" asp-action="EditBook" asp-route-id="@item.BookID">Edit</a> |
-                        <a asp-controller="Admin" asp-action="DetailsBook" asp-route-id="@item.BookID">Details</a> |
-                        <a asp-controller="Admin" asp-action="DeleteBook" asp-route-id="@item.BookID">Delete</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Title)</td>
+            <td>@Html.DisplayFor(modelItem => item.Author)</td>
+            <td>@Html.DisplayFor(modelItem => item.Publisher)</td>
+            <td>@Html.DisplayFor(modelItem => item.PublishedDate)</td>
+            <td>@Html.DisplayFor(modelItem => item.Price)</td>
+            <td>@Html.DisplayFor(modelItem => item.StockQuantity)</td>
+            <td>@Html.DisplayFor(modelItem => item.Description)</td>
+            <td>
+                <img src="@Url.Content($"~/img/products/{item.ImageURL}")" alt="Image" style="max-width: 50px;" />
+            </td>
+            <td>@Html.DisplayFor(modelItem => item.Category.CategoryName)</td>
+            <td>
+                <a asp-controller="Admin" asp-action="EditBook" asp-route-id="@item.BookID">Edit</a> |
+                <a asp-controller="Admin" asp-action="DetailsBook" asp-route-id="@item.BookID">Details</a> |
+                <form asp-controller="Admin" asp-action="DeleteBook" asp-route-id="@item.BookID" method="post" style="display:inline;">
+                    <button type="submit" class="btn btn-link text-danger" onclick="return confirm('Are you sure you want to delete this book?');">Delete</button>
+                </form>
+            </td>
+        </tr>
+    }
+</tbody>
     </table>
 </div>
 

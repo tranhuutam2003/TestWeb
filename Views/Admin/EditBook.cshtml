@@ -11,7 +11,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-controller="Admin" asp-action="EditBook" asp-route-id="@Model.BookID" method="post">
+        <form asp-controller="Admin" asp-action="EditBook" enctype="multipart/form-data" asp-route-id="@Model.BookID" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="BookID" />
             <div class="form-group">
@@ -55,21 +55,57 @@
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ImageURL" class="control-label"></label>
-                <input asp-for="ImageURL" class="form-control" />
+                <label asp-for="ImageFile" class="control-label">Select Image</label>
+                <input type="file" asp-for="ImageFile" class="form-control" id="imageFileInput" />
+                <span asp-validation-for="ImageFile" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ImageURL" class="control-label">Image URL</label>
+                <input asp-for="ImageURL" class="form-control" id="imageURL" readonly />
                 <span asp-validation-for="ImageURL" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <label>Current Image</label>
+                <br />
+                <img src="@Url.Content($"~/img/products/{Model.ImageURL}")" alt="Current Image" style="max-width: 100%; height: auto;" />
+            </div>
+
+            <div class="form-group">
+                <img id="previewImage" src="#" alt="Image Preview" style="display: none; max-width: 100%; height: auto;" />
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </form>
     </div>
 </div>
+
+<script>
+    document.getElementById('imageFileInput').addEventListener('change', function (event) {
+        var file = event.target.files[0];
+        if (file) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                var preview = document.getElementById('previewImage');
+                preview.src = e.target.result; // Lấy đường dẫn tạm thời của hình ảnh
+                preview.style.display = 'block'; // Hiện thẻ img
+            };
+            reader.readAsDataURL(file); // Đọc tệp ảnh
+        } else {
+            document.getElementById('previewImage').style.display = 'none'; // Ẩn nếu không có tệp
+        }
+    });
+</script>
 
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

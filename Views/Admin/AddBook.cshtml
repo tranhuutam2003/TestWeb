@@ -11,9 +11,10 @@
 
 <h4>Books</h4>
 <hr />
+
 <div class="row">
     <div class="col-md-4">
-        <form method="post" asp-action="AddBook">
+        <form asp-action="AddBook" method="post" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Title" class="control-label"></label>
@@ -66,8 +67,13 @@
                 <span asp-validation-for="ImageURL" class="text-danger"></span>
             </div>
 
+            <!-- Thêm thẻ img để hiển thị ảnh đã chọn -->
             <div class="form-group">
-                <input type="submit" value="Submit" class="btn btn-primary" />
+                <img id="previewImage" src="#" alt="Image Preview" style="display: none; max-width: 100%; height: auto;" />
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </form>
     </div>
@@ -75,10 +81,21 @@
 
 <script>
     document.getElementById('imageFileInput').addEventListener('change', function (event) {
-        var fileName = event.target.files[0].name;
-        document.getElementById('imageURL').value = fileName;
+        var file = event.target.files[0];
+        if (file) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                var preview = document.getElementById('previewImage');
+                preview.src = e.target.result; // Lấy đường dẫn tạm thời của hình ảnh
+                preview.style.display = 'block'; // Hiện thẻ img
+            };
+            reader.readAsDataURL(file); // Đọc tệp ảnh
+        } else {
+            document.getElementById('previewImage').style.display = 'none'; // Ẩn nếu không có tệp
+        }
     });
 </script>
+
 <div>
     <a asp-action="Index">Back to List</a>
 </div>

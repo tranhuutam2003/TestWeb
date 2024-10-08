@@ -28,6 +28,6 @@
 
 <!-- Render pagination -->
 <div>
-    @Html.PagedListPager(Model, page => Url.Action("BookList", new { page }))
+    @Html.PagedListPager(Model, page => Url.Action("SanPhamTheoLoai", new { page,maloai=ViewBag.maloai }))
 </div>
 
