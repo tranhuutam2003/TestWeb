@@ -1,0 +1,793 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\models\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:models\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\views\\product\\createcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:views\\product\\createcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\views\\cart\\getcartitems.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:views\\cart\\getcartitems.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\views\\cart\\addtocart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:views\\cart\\addtocart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\views\\cart\\gettotalprice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:views\\cart\\gettotalprice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\views\\cart\\total.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:views\\cart\\total.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\views\\cart\\removefromcart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:views\\cart\\removefromcart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\views\\cart\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:views\\cart\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\views\\cart\\index1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:views\\cart\\index1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\service\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:service\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\views\\product\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:views\\product\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\views\\shared\\header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:views\\shared\\header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\testweb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:testweb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\data\\bookcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:data\\bookcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\models\\books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:models\\books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\views\\shared\\hero.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:views\\shared\\hero.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\views\\shared\\categories.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:views\\shared\\categories.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\views\\shared\\category.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:views\\shared\\category.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\viewmodel\\productsearchviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:viewmodel\\productsearchviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\views\\product\\categorylist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:views\\product\\categorylist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\views\\shared\\product.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:views\\shared\\product.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\views\\shared\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:views\\shared\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|c:\\users\\phamc\\onedrive\\desktop\\testweb\\wwwroot\\js\\jquery.slicknav.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{97168E27-B7DE-48D2-8D3B-FFFBC9917CB4}|TestWeb.csproj|solutionrelative:wwwroot\\js\\jquery.slicknav.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddToCart.cshtml",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Cart\\AddToCart.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cart\\AddToCart.cshtml",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Cart\\AddToCart.cshtml",
+              "RelativeToolTip": "Views\\Cart\\AddToCart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T09:16:55.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateCategory.cshtml",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Product\\CreateCategory.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\CreateCategory.cshtml",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Product\\CreateCategory.cshtml",
+              "RelativeToolTip": "Views\\Product\\CreateCategory.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T10:01:16.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "Models\\CartItem.cs",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Models\\CartItem.cs",
+              "RelativeToolTip": "Models\\CartItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T08:08:33.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Controllers\\CartController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T08:03:41.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetCartItems.cshtml",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Cart\\GetCartItems.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cart\\GetCartItems.cshtml",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Cart\\GetCartItems.cshtml",
+              "RelativeToolTip": "Views\\Cart\\GetCartItems.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T09:05:12.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ShoppingCart.cs",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Models\\ShoppingCart.cs",
+              "RelativeDocumentMoniker": "Models\\ShoppingCart.cs",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Models\\ShoppingCart.cs",
+              "RelativeToolTip": "Models\\ShoppingCart.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T06:37:57.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "Models\\Payment.cs",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Models\\Payment.cs",
+              "RelativeToolTip": "Models\\Payment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T09:45:34.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T09:07:50.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GetTotalPrice.cshtml",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Cart\\GetTotalPrice.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cart\\GetTotalPrice.cshtml",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Cart\\GetTotalPrice.cshtml",
+              "RelativeToolTip": "Views\\Cart\\GetTotalPrice.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T09:17:45.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Cart\\Add.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cart\\Add.cshtml",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Cart\\Add.cshtml",
+              "RelativeToolTip": "Views\\Cart\\Add.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T08:59:41.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CartService.cs",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Service\\CartService.cs",
+              "RelativeDocumentMoniker": "Service\\CartService.cs",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Service\\CartService.cs",
+              "RelativeToolTip": "Service\\CartService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T08:26:59.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Total.cshtml",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Cart\\Total.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cart\\Total.cshtml",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Cart\\Total.cshtml",
+              "RelativeToolTip": "Views\\Cart\\Total.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T09:00:53.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RemoveFromCart.cshtml",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Cart\\RemoveFromCart.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cart\\RemoveFromCart.cshtml",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Cart\\RemoveFromCart.cshtml",
+              "RelativeToolTip": "Views\\Cart\\RemoveFromCart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T09:04:15.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "Views\\Cart\\Index.cshtml",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAswCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T08:55:59.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index1.cshtml",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Cart\\Index1.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cart\\Index1.cshtml",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Cart\\Index1.cshtml",
+              "RelativeToolTip": "Views\\Cart\\Index1.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T08:57:41.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Create.cshtml",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "Views\\Product\\Create.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T09:37:17.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T15:44:12.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAE4AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-11T15:11:28.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Header.cshtml",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Shared\\Header.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Header.cshtml",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Shared\\Header.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Header.cshtml",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAswF0AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T08:46:06.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-14T15:44:24.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Search.cshtml",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Product\\Search.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Search.cshtml",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Product\\Search.cshtml",
+              "RelativeToolTip": "Views\\Product\\Search.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-14T15:35:51.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAmwFQAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T15:34:03.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAuwBAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T15:32:28.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Index.cshtml",
+              "ViewState": "AQIAACkBAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-24T14:41:35.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Books.cs",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Models\\Books.cs",
+              "RelativeDocumentMoniker": "Models\\Books.cs",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Models\\Books.cs",
+              "RelativeToolTip": "Models\\Books.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T06:34:49.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-11T15:30:11.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BookContext.cs",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Data\\BookContext.cs",
+              "RelativeDocumentMoniker": "Data\\BookContext.cs",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Data\\BookContext.cs",
+              "RelativeToolTip": "Data\\BookContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T06:55:14.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TestWeb.csproj",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\TestWeb.csproj",
+              "RelativeDocumentMoniker": "TestWeb.csproj",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\TestWeb.csproj",
+              "RelativeToolTip": "TestWeb.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-06T08:26:13.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T15:23:29.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T15:05:30.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBAAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T15:21:53.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAQwFAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-11T15:31:27.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T06:36:23.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-27T02:19:13.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAwwAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T14:34:48.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Category.cshtml",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Shared\\Category.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Category.cshtml",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Shared\\Category.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Category.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-20T15:26:02.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Categories.cshtml",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Shared\\Categories.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Categories.cshtml",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Shared\\Categories.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Categories.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-20T15:52:05.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Hero.cshtml",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Shared\\Hero.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Hero.cshtml",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Shared\\Hero.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Hero.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-24T14:05:52.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "CategoryList.cshtml",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Product\\CategoryList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\CategoryList.cshtml",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Product\\CategoryList.cshtml",
+              "RelativeToolTip": "Views\\Product\\CategoryList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T10:06:03.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ProductSearchViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\ViewModel\\ProductSearchViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ProductSearchViewModel.cs",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\ViewModel\\ProductSearchViewModel.cs",
+              "RelativeToolTip": "ViewModel\\ProductSearchViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T15:38:19.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Product.cshtml",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Shared\\Product.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Product.cshtml",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Shared\\Product.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Product.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-20T15:58:09.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Search.cshtml",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Shared\\Search.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Search.cshtml",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Shared\\Search.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Search.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-14T15:14:05.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-14T15:43:18.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-14T15:27:51.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "additional-methods.js",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+              "RelativeDocumentMoniker": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+              "RelativeToolTip": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+              "ViewState": "AgIAAAUBAAAAAAAAAAAowBABAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-11T15:36:52.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "bootstrap.esm.js",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+              "RelativeDocumentMoniker": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+              "RelativeToolTip": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+              "ViewState": "AgIAAC8CAAAAAAAAAAAowDoCAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-11T15:36:54.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "bootstrap.bundle.js",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+              "RelativeDocumentMoniker": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+              "RelativeToolTip": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+              "ViewState": "AgIAAMcDAAAAAAAAAAAowNIDAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-11T15:36:47.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "jquery.slicknav.js",
+              "DocumentMoniker": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\wwwroot\\js\\jquery.slicknav.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\jquery.slicknav.js",
+              "ToolTip": "C:\\Users\\phamc\\OneDrive\\Desktop\\TestWeb\\wwwroot\\js\\jquery.slicknav.js",
+              "RelativeToolTip": "wwwroot\\js\\jquery.slicknav.js",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwMoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-11T15:33:14.809Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

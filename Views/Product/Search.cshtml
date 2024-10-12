@@ -1,0 +1,24 @@
+﻿@using TestWeb.ViewModel
+@model ProductSearchViewModel
+
+<div class="container">
+    <h2>Search Results for "@Model.Query"</h2>
+    <form asp-action="Search" asp-controller="Product" method="get">
+        <input type="text" name="query" value="@Model.Query" placeholder="What do you need?" />
+        <button type="submit" class="site-btn">Search</button>
+    </form>
+
+    @if (Model.Products != null && Model.Products.Any())
+    {
+        <ul>
+            @foreach (var product in Model.Products)
+            {
+                <li>@product.Name - @product.Category - $@product.Price</li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>No products found.</p>
+    }
+</div>
