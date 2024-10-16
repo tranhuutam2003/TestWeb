@@ -1,10 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TestWeb.Data;
-using TestWeb.Models;
 using TestWeb.ViewModel;
 using X.PagedList;
-using static System.Reflection.Metadata.BlobBuilder;
 
 namespace TestWeb.Controllers
 {

@@ -1,6 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Reflection.Emit;
 using TestWeb.Models;
 
 namespace TestWeb.Data
@@ -20,7 +18,7 @@ namespace TestWeb.Data
         public DbSet<ShoppingCart> ShoppingCartItems { get; set; }
         public DbSet<Payment> Payments { get; set; }
         public DbSet<Review> Reviews { get; set; }
-
+        public DbSet<Product> Products { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Thiết lập quan hệ giữa các bảng
