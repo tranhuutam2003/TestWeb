@@ -1,5 +1,5 @@
 ﻿@{
-
+    Layout = "~/Views/Product/ProductLayout.cshtml";
 }
 @using X.PagedList.Mvc.Core
 @model X.PagedList.IPagedList<TestWeb.Models.Books>
@@ -25,6 +25,7 @@
         }
 
 <!-- Render pagination -->
-<div>
+
+<div class="product__pagination">
     @Html.PagedListPager(Model, page => Url.Action("BookList", new { page }))
 </div>

@@ -34,7 +34,7 @@ namespace TestWeb.Controllers
                 // Lưu thông tin phiên đăng nhập
                 HttpContext.Session.SetString("Username", existingUser.Email);
                 HttpContext.Session.SetInt32("Role", existingUser.Role);
-
+                HttpContext.Session.SetString("FullName", existingUser.FullName);
 
                 // Kiểm tra phân quyền
                 if (existingUser.Role == 1) // Admin

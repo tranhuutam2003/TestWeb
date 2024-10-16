@@ -21,6 +21,7 @@
         white-space: nowrap;
         padding: 8px;
     }
+
 </style>
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 <h1>AllBooks</h1>
@@ -72,6 +73,8 @@
     </table>
 </div>
 
-<div class="pagination">
+<div class="product__pagination">
     @Html.PagedListPager(Model, page => Url.Action("AllBooks", new { page }))
 </div>
+
+
