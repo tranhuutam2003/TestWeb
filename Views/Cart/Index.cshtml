@@ -1,4 +1,7 @@
-﻿@* @* @* @model TestWeb.Models.Cart
+﻿@{
+    Layout = "~/Views/Cart/CartLayout.cshtml";
+     
+}
 
 <h2>Giỏ hàng</h2>
 
@@ -11,7 +14,8 @@ else
     <table class="table">
         <thead>
             <tr>
-                <th>Sách</th>
+                <th>Sản phẩm</th>
+                <th>Hình ảnh</th> <!-- Thêm hình ảnh -->
                 <th>Giá</th>
                 <th>Số lượng</th>
                 <th>Tổng</th>
@@ -23,130 +27,11 @@ else
             {
                 <tr>
                     <td>@item.Book.Title</td>
-                    <td>@item.Book.Price</td>
-                    <td>@item.Quantity</td>
-                    <td>@(item.Quantity * item.Book.Price)</td>
                     <td>
-                        <a asp-action="RemoveFromCart" asp-route-bookId="@item.Book.BookID" class="btn btn-danger">Xóa</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-
-    <h3>Tổng: @Model.TotalAmount</h3>
-}
- *@@* 
- @model TestWeb.Models.Cart
-
-<h2>Giỏ hàng</h2>
-
-@if (Model.Items.Count == 0)
-{
-    <p>Giỏ hàng của bạn đang trống.</p>
-}
-else
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Sách</th>
-                <th>Giá</th>
-                <th>Số lượng</th>
-                <th>Tổng</th>
-                <th>Hành động</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model.Items)
-            {
-                <tr>
-                    <td>@item.Book.Title</td>
+                        <div width="100" class="featured__item__pic set-bg" data-setbg="@Url.Content("~/img/products/" + @item.Book.ImageURL)">
+                            <!-- Đây là chỗ sử dụng hình nền cho sản phẩm -->
+                        </div>
                     <td>@item.Book.Price</td>
-                    <td>@item.Quantity</td>
-                    <td>@(item.Quantity * item.Book.Price)</td>
-                    <td>
-                        <a asp-action="RemoveFromCart" asp-route-bookId="@item.Book.BookID" class="btn btn-danger">Xóa</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-
-    <h3>Tổng: @Model.TotalAmount</h3>
-}
- *@
-
-@*              @model TestWeb.Models.Cart
-
-<h2>Giỏ Hàng</h2>
-
-<table>
-    <thead>
-        <tr>
-            <th>Tiêu đề</th>
-            <th>Giá</th>
-            <th>Số lượng</th>
-            <th>Tổng</th>
-            <th>Hành động</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model.Items)
-        {
-            <tr>
-                <td>@item.Book.Title</td>
-                <td>@item.Book.Price</td>
-                <td>
-                    <form method="post" asp-action="IncreaseQuantity" asp-route-bookId="@item.Book.BookID">
-                        <button type="submit">+</button>
-                    </form>
-                    @item.Quantity
-                    <form method="post" asp-action="DecreaseQuantity" asp-route-bookId="@item.Book.BookID">
-                        <button type="submit">-</button>
-                    </form>
-                </td>
-                <td>@(item.Book.Price * item.Quantity).ToString("C")</td>
-                <td><a asp-action="RemoveFromCart" asp-route-bookId="@item.Book.BookID">Xóa</a></td>
-            </tr>
-        }
-    </tbody>
-</table>
-
-<div>
-    <strong>Tổng tiền: @Model.TotalAmount</strong>
-</div>
- *@
-
- @using System.Globalization
-
- @model TestWeb.Models.Cart
-
-<h2>Giỏ hàng</h2>
-
-@if (Model.Items.Count == 0)
-{
-    <p>Giỏ hàng của bạn đang trống.</p>
-}
-else
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Sách</th>
-                <th>Giá</th>
-                <th>Số lượng</th>
-                <th>Tổng</th>
-                <th>Hành động</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model.Items)
-            {
-                <tr>
-                    <td>@item.Book.Title</td>
-                    <td>@item.Book.Price</td>
-
                     <td>
                         <form method="post" asp-action="DecreaseQuantity" asp-route-bookId="@item.Book.BookID" style="display:inline;">
                             <button type="submit" class="btn btn-danger">-</button>
@@ -155,8 +40,6 @@ else
                         <form method="post" asp-action="IncreaseQuantity" asp-route-bookId="@item.Book.BookID" style="display:inline;">
                             <button type="submit" class="btn btn-primary">+</button>
                         </form>
-                        
-                       
                     </td>
                     <td>@(item.Quantity * item.Book.Price)</td>
                     <td>
@@ -166,6 +49,5 @@ else
             }
         </tbody>
     </table>
-
     <h3>Tổng: @Model.TotalAmount</h3>
 }
