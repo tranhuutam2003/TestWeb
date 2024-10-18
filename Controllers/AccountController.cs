@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using TestWeb.Models;
-using TestWeb.Data; 
+using TestWeb.Data;
 using System.Linq;
 using System.Net.Mail;
 using System.Net;
@@ -132,13 +132,13 @@ namespace TestWeb.Controllers
 
         public IActionResult Login()
         {
-            
+
             //return View();
             return PartialView();
         }
 
         [HttpPost]
-        
+
         public IActionResult Login(User user)
         {
             // Kiểm tra user có tồn tại trong cơ sở dữ liệu không

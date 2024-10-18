@@ -5,7 +5,7 @@ namespace TestWeb.Models
 {
     public class Books
     {
-        [Key] 
+        [Key]
         public int BookID { get; set; }
         [Required(ErrorMessage = "Tiêu đề không được để trống.")]
         public string? Title { get; set; }
