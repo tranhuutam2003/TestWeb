@@ -13,6 +13,4 @@ namespace TestWeb.Models
         public User? User { get; set; }
         public Books? Book { get; set; }
     }
-
-
 }

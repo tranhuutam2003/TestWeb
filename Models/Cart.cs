@@ -1,12 +1,16 @@
-﻿namespace TestWeb.Models
+﻿
+namespace TestWeb.Models
 {
     public class Cart
     {
+        public int CartID { get; set; }
+        public string? PhoneNumber { get; set; }
         public List<CartItem> Items { get; set; } = new List<CartItem>();
+        public User? User { get; set; }
 
         public void AddItem(Books book, int quantity)
         {
-            var item = Items.Find(i => i.Book.BookID == book.BookID);
+            var item = Items.FirstOrDefault(i => i.Book.BookID == book.BookID);
             if (item == null)
             {
                 Items.Add(new CartItem { Book = book, Quantity = quantity });
